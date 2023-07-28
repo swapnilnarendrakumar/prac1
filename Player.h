@@ -9,8 +9,11 @@ class Player {
         char move;
         string name;
     public:
-        char makeMove();
-        string getName();
+        virtual char makeMove() = 0;
+        virtual  string getName() = 0;
+        void setMove(char M);
+        void setName(string na);
+
         // virtual char makeMove() = 0;
         // virtual string getName() = 0;
 
