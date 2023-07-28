@@ -25,10 +25,10 @@ Player* Referee::refGame(Player* player1, Player* player2) {
     }
 
     if (win == 1) {
-        cout << player1->getName() << " Wins." << endl;
+        // cout << player1->getName() << " Wins." << endl;
         return player1;
     } else if (win == 2) {
-        cout << player2->getName() << " Wins." << endl;
+        // cout << player2->getName() << " Wins." << endl;
         return player2;
     } else {
         // cout << "It's a Tie." << endl;
