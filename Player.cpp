@@ -1,12 +1,10 @@
-#include "player.h"
 #include <string>
+#include "Player.h"
 
 void Player::setName(string na){
   this->name = na;
-
 }
 
-void PLayer::setMove(char M){
-  this->Move = M;
-
+void Player::setMove(char M){
+  this->move = M;
 }
