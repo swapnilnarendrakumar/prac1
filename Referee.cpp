@@ -11,17 +11,33 @@ Referee::Referee() {
 }
 
 Player* Referee::refGame(Player* player1, Player* player2) {
+    cout << "Enter move:";
+    char a;
+    cin >> a;
+    cout << endl;
+
+
     int win = 0;
-    if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'R')) {
+    // if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'R')) {
+    //     win = 0;
+    // } else if ((player1->makeMove() == 'S') &&(player2->makeMove() == 'R')) {
+    //     win = 2;
+    // } else if ((player1->makeMove() == 'P') &&(player2->makeMove() == 'R')) {
+    //     win = 1;
+    // }  else if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'S')) {
+    //     win = 1;
+    // } else if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'P')) {
+    //     win = 2;
+    // }
+
+    if (a == 'S') {
+        win = 2;
+    } else if (a == 'R') {
         win = 0;
-    } else if ((player1->makeMove() == 'S') &&(player2->makeMove() == 'R')) {
-        win = 2;
-    } else if ((player1->makeMove() == 'P') &&(player2->makeMove() == 'R')) {
+    } else if (a == 'P') {
         win = 1;
-    }  else if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'S')) {
-        win = 1;
-    } else if ((player1->makeMove() == 'R') &&(player2->makeMove() == 'P')) {
-        win = 2;
+    }  else {
+        win = 0;
     }
 
     if (win == 1) {
