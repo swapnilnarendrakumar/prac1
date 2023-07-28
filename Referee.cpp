@@ -31,7 +31,7 @@ Player* Referee::refGame(Player* player1, Player* player2) {
         cout << player2->getName() << " Wins." << endl;
         return player2;
     } else {
-        cout << "It's a Tie." << endl;
+        // cout << "It's a Tie." << endl;
         return nullptr;
     }
 }
