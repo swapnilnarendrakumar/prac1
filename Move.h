@@ -3,8 +3,12 @@
 #define MOVE_H
 #include <iostream>
 #include <string>
+#include <unordered_map>
 
 using namespace std;
+
+// template
+// unorder_map<string, Move> umap;
 
 class Move {
     protected:
@@ -13,6 +17,7 @@ class Move {
     public:
         virtual string getName() = 0; 
         virtual void setName(string na) = 0;
+        virtual int win_against(string name) = 0;
 
 };
 
