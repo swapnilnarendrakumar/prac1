@@ -1,19 +1,19 @@
 #include <iostream>
 #include <string>
-#include "Robot.h"
+#include "Pirate.h"
 
 using namespace std;
 
-string Robot::getName() {
+string Pirate::getName() {
     return name;
 }; 
 
-void Robot::setName(string na) {
+void Pirate::setName(string na) {
     this->name = na;
 };
 
 int win_against(string name) {
-    string array[2] = {"Zombie", "Ninja"};
+    string array[2] = {"Monkey", "Robot"};
 
     for (int i = 0; i < 2; i++) {
         if (name == array[i]) {

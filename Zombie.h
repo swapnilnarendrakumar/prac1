@@ -1,15 +1,14 @@
 // Dai(a1837470), Dil(a1825200), Swapnil(a1848855)
-#ifndef ROBOT_H
-#define ROBOT_H
+#ifndef ZOMBIE_H
+#define ZOMBIE_H
 #include <iostream>
 #include <string>
 #include "Move.h"
 
 using namespace std;
 
-class Robot: public Move {
+class Zombie: public Move {
     protected:
-    string name;
 
     public:
         string getName(); 
@@ -18,5 +17,6 @@ class Robot: public Move {
         int win_against(string name);
 
 };
+
 
 #endif
